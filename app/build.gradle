@@ -5,7 +5,10 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-
+    compileOptions {
+        sourceCompatibility '1.8'
+        targetCompatibility '1.8'
+    }
     defaultConfig {
         applicationId "com.app.ui.segmentcontrol"
         minSdkVersion 16
@@ -34,6 +37,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
-    implementation 'com.github.ceryle:SegmentedButton:v2.0.2'
+    implementation 'com.github.addisonelliott:SegmentedButton:3.1.7'
 }
